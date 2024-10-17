@@ -1,0 +1,314 @@
+body {
+  background-color: #181818; 
+  color: #fff; 
+  font-family: 'Arial', sans-serif;
+}
+
+/* Mejoras para el título y subtítulo */
+h1.display-4 {
+  font-size: 3rem; 
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  border-bottom: 2px solid #1db954; 
+  padding-bottom: 10px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  background-color: #282828; /* Fondo oscuro en la barra */
+  color: #fff; /* Texto blanco */
+}
+
+.search-bar input::placeholder {
+  color: #b3b3b3; /* Texto de marcador gris claro */
+}
+
+.search-bar button {
+  background-color: #1db954; /* Cambiamos el fondo del botón a verde */
+  border: none;
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 1rem;
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.search-bar button:hover {
+  background-color: #1ed760; 
+}
+
+/* Resultados de búsqueda con íconos */
+.search-results i {
+  font-size: 1.5rem; /* Tamaño del ícono de reproducir */
+  color: #1db954;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-results i:hover {
+  color: #fff;
+}
+
+/* Enlaces del Navbar (corrección del azul) */
+.nav-link {
+  color: #ffffff !important; /* Aseguramos que los enlaces sean blancos */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #1DB954 !important; /* Al pasar el mouse, el color será verde */
+}
+
+/* Reproductor de música */
+#music-player {
+  background-color: #282828; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  text-align: center;
+}
+.btn btn-primary{
+  background-color: #1db954;
+  
+}
+
+.controls .btn {
+  background: none; 
+  border: none; 
+  color: #1db954; 
+  font-size: 1.5rem; 
+  margin: 0 15px; 
+  cursor: pointer; 
+  transition: color 0.3s; 
+}
+
+.controls .btn:hover {
+  color: #fff; /* Cambiar color al pasar el mouse */
+}
+
+/* Mejora de lista de canciones */
+.playlists {
+  list-style: none; 
+  padding: 0; 
+}
+
+.playlists li {
+  background-color: #333333; 
+  margin: 10px 0; 
+  padding: 15px; 
+  border-radius: 8px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s; 
+}
+
+.playlists li:hover {
+  background-color: #444444; 
+}
+
+.playlists li i {
+  color: #1db954; 
+  font-size: 1.5rem; 
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.playlists li i:hover {
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #181818;
+  padding: 20px 0;
+  position: end;
+  bottom: 0;
+  left: 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-and-rights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #1DB954; 
+}
+
+.text-right a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.text-right a:hover {
+  color: #1DB954;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  footer .text-right {
+      margin-top: 10px;
+  }
+}
+
+/* Estilo para el input de búsqueda */
+form input[type="text"] {
+  border: 2px solid #1db954; /* Cambia el color del borde a verde */
+  background-color: #282828; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  border-radius: 50px; /* Borde redondeado */
+}
+
+form input[type="text"]::placeholder {
+  color: #b3b3b3; /* Cambia el color del placeholder (texto de ayuda) */
+}
+
+/* Estilo para el botón de búsqueda */
+form button[type="submit"] {
+  background-color: #282c34; /* Color de fondo verde de Spotify */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 50px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+form button[type="submit"]:hover {
+  background-color: #1ed760; /* Color de fondo verde claro cuando pasa el ratón */
+}
+
+form input[type="text"]:focus {
+  outline: none; /* Elimina el borde azul al hacer foco en el campo de búsqueda */
+  border-color: #282c34; /* Mantiene el color del borde verde */
+}
+
+.custom-title {
+  font-size: 1.5rem; /* Cambia el tamaño de la fuente según lo necesites */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+#about {
+  background-color: #282828; /* Fondo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 30px 0; /* Margen superior e inferior */
+}
+
+#about h2 {
+  font-size: 2rem; /* Tamaño de fuente del encabezado */
+  color: #ffffff; /* Color oscuro para el texto */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+#about p {
+  font-size: 1.1rem; /* Tamaño de fuente del párrafo */
+  line-height: 1.6; /* Altura de línea para mayor legibilidad */
+  color: #ffffff; /* Color gris oscuro */
+}
+
+#about h3 {
+  font-size: 1.5rem; /* Tamaño de fuente para subtítulos */
+  color: #1DB954; /* Color azul para destacar */
+  margin-top: 20px; /* Margen superior */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+#about ul {
+  list-style: none; /* Quitar los puntos de la lista */
+  padding: 0; /* Quitar el espaciado interno */
+}
+
+#about li {
+  margin: 10px 0; /* Margen vertical entre elementos de la lista */
+  font-size: 1rem; /* Tamaño de fuente del ítem de la lista */
+  color: #495057; /* Color gris oscuro */
+}
+
+#about .features {
+  display: flex; /* Disposición flexible */
+  justify-content: space-around; /* Espacio uniforme entre elementos */
+  margin-top: 20px; /* Margen superior */
+}
+
+#about .feature {
+  text-align: center; /* Centrar el texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+#about .feature i {
+  font-size: 3rem; /* Tamaño del ícono */
+  color: #282c34; /* Color azul */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+#about .feature :hover {
+  color: #1DB954; /* Cambia el color al pasar el ratón */
+}
+
+#about blockquote {
+  font-style: italic; /* Estilo de cursiva */
+  border-left: 4px solid #1DB954; /* Borde izquierdo azul */
+  padding-left: 20px; /* Espaciado interno a la izquierda */
+  margin: 20px 0; /* Margen vertical */
+  color: #6c757d; /* Color gris */
+}
+
+#about .btn {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+#about .btn:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
