@@ -13,9 +13,9 @@ const Header = () => {
               <Link className="nav-link" to="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">Acerca de</a></li>
+              <a className="nav-link" href="#SpotifyPlayer">Reproductor</a></li>
             <li className="nav-item">
-              <a className="nav-link" href="#blog">Blog</a></li>
+              <a className="nav-link" href="#about">Acerca de</a></li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">Contacto</a></li>
           </ul>

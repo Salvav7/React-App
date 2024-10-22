@@ -71,7 +71,7 @@ export const fetchCurrentlyPlaying = async (token) => {
 
         const data = await response.json();
         console.log('Currently playing:', data);
-        return data; // Retorna la pista que se está reproduciendo
+        return data; 
     } catch (error) {
         console.error('Error fetching currently playing:', error);
     }
