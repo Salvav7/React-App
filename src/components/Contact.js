@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    lastName: "",
     email: "",
     message: "",
   });
@@ -33,6 +34,7 @@ const Contact = () => {
 
         setFormData({
           name: "",
+          lastName: "",
           email: "",
           message: "",
         });
@@ -54,6 +56,18 @@ const Contact = () => {
             type="text"
             name="name"
             value={formData.name}
+            onChange={handleChange}
+            required
+            minLength="2"
+            maxLength="50"
+          />
+        </label>
+        <label>
+          Apellido:
+          <input
+            type="text"
+            name="lastName"
+            value={formData.lastName}
             onChange={handleChange}
             required
             minLength="2"
